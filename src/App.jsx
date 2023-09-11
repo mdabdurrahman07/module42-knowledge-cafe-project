@@ -10,7 +10,7 @@ function App() {
     <>
     
      <Header></Header>
-    <main className='flex items-center'>
+    <main className='md:flex max-w-screen-xl mx-auto'>
     <Blogs></Blogs>
     <Bookmarks></Bookmarks>
     </main>
