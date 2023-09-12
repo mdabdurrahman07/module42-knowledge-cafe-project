@@ -21,7 +21,7 @@ function App() {
     <>
     
      <Header></Header>
-    <main className='md:flex max-w-screen-xl mx-auto'>
+    <main className='md:flex max-w-screen-2xl gap-2 mx-auto'>
     <Blogs handleMarkAsRead={handleMarkAsRead} handBookMark={handBookMark} ></Blogs>
     <Bookmarks bookmark={bookmark} ReadTime={ReadTime} ></Bookmarks>
     </main>

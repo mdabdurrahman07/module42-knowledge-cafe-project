@@ -13,7 +13,7 @@ const Blogs = ({handBookMark , handleMarkAsRead}) => {
   }, [])
     return (
         <div className='md:w-2/3'>
-            <h1 className="text-3xl font-medium">Blogs : {blogs.length} </h1>
+            <h1 className="text-3xl font-bold">Blogs : {blogs.length} </h1>
             <div>
               {
                 blogs.map(blogsAll => <Blog

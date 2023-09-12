@@ -25,7 +25,7 @@ const Blog = ({ blog ,  handBookMark, handleMarkAsRead }) => {
              {/* reading time and bookmark icon */}
              <div className='flex items-center gap-2'>
               <p>{reading_time} min read</p>
-              <button onClick={handBookMark}>
+              <button onClick={() => handBookMark(blog)}>
               <FaBookmark></FaBookmark>
               </button>
              </div>
