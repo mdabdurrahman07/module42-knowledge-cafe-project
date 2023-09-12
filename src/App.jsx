@@ -13,15 +13,17 @@ function App() {
         const AllBookmarks = [...bookmark , blogItems]
         Setbookmark(AllBookmarks)
       }
-      const handleMarkAsRead = time =>{
+      const handleMarkAsRead = (id, time) =>{
        const readingTime = ReadTime + time
        settime(readingTime)
+       const remainingBookMark = bookmark.filter(book => book.id !== id)
+       Setbookmark(remainingBookMark)
       }
   return (
     <>
     
      <Header></Header>
-    <main className='md:flex max-w-screen-2xl gap-2 mx-auto'>
+    <main className='md:flex max-w-screen-2xl gap-5 space-y-2 mx-auto'>
     <Blogs handleMarkAsRead={handleMarkAsRead} handBookMark={handBookMark} ></Blogs>
     <Bookmarks bookmark={bookmark} ReadTime={ReadTime} ></Bookmarks>
     </main>
